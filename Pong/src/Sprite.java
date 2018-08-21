@@ -2,14 +2,14 @@ import java.awt.Color;
 import java.awt.Rectangle;
 
 public class Sprite {
-	protected int xPosition;
-	protected int yPosition;
-	protected int xVelocity;
-	protected int yVelocity;
+	private int xPosition;
+	private int yPosition;
+	private int xVelocity;
+	private int yVelocity;
 	private int initialXPosition;
 	private int initialYPosition;
-	protected int width;
-	protected int height;
+	private int width;
+	private int height;
 	private Color color;
 	
 	public int getXPosition () {
