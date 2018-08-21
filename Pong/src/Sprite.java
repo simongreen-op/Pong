@@ -1,14 +1,14 @@
 import java.awt.Color;
 
 public class Sprite {
-	private int xPosition;
-	private int yPosition;
-	private int xVelocity;
-	private int yVelocity;
+	protected int xPosition;
+	protected int yPosition;
+	protected int xVelocity;
+	protected int yVelocity;
 	private int initialXPosition;
 	private int initialYPosition;
-	private int width;
-	private int height;
+	protected int width;
+	protected int height;
 	private Color color;
 	
 	public int getXPosition () {
@@ -37,6 +37,11 @@ public class Sprite {
 	
 	public Color getColor () {
 		return color;
+	}
+	
+	public void moveObject () {
+		xPosition += xVelocity;
+		yPosition += yVelocity;
 	}
 	
 	public void setXPosition (int value, int panelWidth) {

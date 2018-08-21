@@ -13,6 +13,8 @@ import javax.swing.Timer;
 public class PongPanel extends JPanel implements ActionListener, KeyListener {
 	private final static Color BACKGROUND_COLOR = Color.BLACK;
 	private final static int TIMER_DELAY = 5;
+	private final static int BALL_MOVEMENT_SPEED = 2;
+
 	GameState gameState = GameState.Initialising;
 	Ball ball;
 	Paddle paddle1;
@@ -35,9 +37,13 @@ public class PongPanel extends JPanel implements ActionListener, KeyListener {
         	case Initialising: {
             	createObjects();
             	gameState = GameState.Playing;
+            	ball.setXVelocity(BALL_MOVEMENT_SPEED);
+                ball.setYVelocity(BALL_MOVEMENT_SPEED);
             	break;
         	}
         	case Playing: {
+        		ball.moveObject();            // Move ball
+                ball.checkWallBounce(getWidth(), getHeight());
             	break;
         	}
         	case GameOver: {
