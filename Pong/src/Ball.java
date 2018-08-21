@@ -17,9 +17,11 @@ public class Ball extends Sprite {
 	      if(xPosition <= 0) {
 	          // Hit left side of screen
 	          xVelocity = -xVelocity;
+	    	  resetToInitialPosition();
 	      } else if(xPosition >= panelWidth - width) {
 	          // Hit right side of screen
 	          xVelocity = -xVelocity;
+	    	  resetToInitialPosition();
 	      }
 	      if(yPosition <= 0 || yPosition >= panelHeight - height) {
 	          // Hit top or bottom of screen

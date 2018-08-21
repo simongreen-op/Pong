@@ -30,7 +30,7 @@
   </class>  
   <class id="4" language="java" name="Paddle" project="Pong" file="/Pong/src/Paddle.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="300" y="198"/>    
+    <position height="-1" width="-1" x="325" y="188"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -39,7 +39,7 @@
   </class>  
   <class id="5" language="java" name="Ball" project="Pong" file="/Pong/src/Ball.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="135" width="126" x="205" y="381"/>    
+    <position height="-1" width="-1" x="338" y="440"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
